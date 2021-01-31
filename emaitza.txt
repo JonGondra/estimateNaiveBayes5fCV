@@ -1,0 +1,10 @@
+Sun Jan 31 20:32:45 CET 2021
+emaitza.txt
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 143  22   0   0   0 |   a = <50
+  29 109   0   0   0 |   b = >50_1
+   0   0   0   0   0 |   c = >50_2
+   0   0   0   0   0 |   d = >50_3
+   0   0   0   0   0 |   e = >50_4
