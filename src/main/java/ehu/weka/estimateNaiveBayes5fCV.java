@@ -38,13 +38,13 @@ public class estimateNaiveBayes5fCV {
         System.out.println("Datu sorta honetan " + data.numInstances() + " instantzia daude");
         System.out.println("Datu sorta honetan " + data.numAttributes() + " atributu daude");
         System.out.println("Datu sorta honetan, lehenengo atributuak  " + data.numDistinctValues(0) + " balio desberdin hartu ditzake");
-        System.out.println("Datu sorta honetan, azken-aurreko atributuak  " + data.attributeStats(data.numAttributes() - 2).missingCount + "missing values ditu");
+        System.out.println("Datu sorta honetan, azken-aurreko atributuak  " + data.attributeStats(data.numAttributes() - 2).missingCount + " missing values ditu");
         System.out.println("-------------------------------------------------------------");
     }
 
     private static Evaluation entrenatu(Instances data) throws Exception {
         NaiveBayes model=new NaiveBayes();
-        model.buildClassifier(data);
+        //model.buildClassifier(data);
 
         Evaluation eval = new Evaluation(data);
         eval.crossValidateModel(model, data, 5, new Random(1));

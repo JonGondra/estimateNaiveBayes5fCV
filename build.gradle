@@ -22,7 +22,7 @@ dependencies {
 
 application {
     mainModule = 'ehu.weka' // name defined in module-info.java
-    mainClass = 'ehu.weka.CSVtoARFF'
+    mainClass = 'ehu.weka.estimateNaiveBayes5fCV'
 }
 
 test {
